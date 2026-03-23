@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TikTok Style T</title>
+
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .tiktok {
+      font-size: 650px;
+      font-weight: bold;
+      color: white;
+      position: relative;
+    }
+
+    /* เงาฟ้า */
+    .tiktok::before {
+      content: "T";
+      position: absolute;
+      left: -10px;
+      top: -5px;
+      color: cyan;
+      z-index: -1;
+    }
+
+    /* เงาชมพู */
+    .tiktok::after {
+      content: "T";
+      position: absolute;
+      left: 16px;
+      top: 0;
+      color: rgb(230, 27, 37);
+      z-index: -2;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="tiktok">T</h1>
+</body>
+</html>
+
